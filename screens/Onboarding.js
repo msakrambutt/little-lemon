@@ -90,7 +90,7 @@ const Onboarding = () => {
       >
         <View style={styles.page} key="1">
           <View style={styles.pageContainer}>
-            <Text style={styles.text}>First Name</Text>
+            <Text style={styles.text}>First Name*</Text>
             <TextInput
               style={styles.inputBox}
               value={firstName}
@@ -113,7 +113,7 @@ const Onboarding = () => {
         </View>
         <View style={styles.page} key="2">
           <View style={styles.pageContainer}>
-            <Text style={styles.text}>Last Name</Text>
+            <Text style={styles.text}>Last Name*</Text>
             <TextInput
               style={styles.inputBox}
               value={lastName}
@@ -147,7 +147,7 @@ const Onboarding = () => {
         </View>
         <View style={styles.page} key="3">
           <View style={styles.pageContainer}>
-            <Text style={styles.text}>Email</Text>
+            <Text style={styles.text}>Email*</Text>
             <TextInput
               style={styles.inputBox}
               value={email}
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
   },
   pageContainer: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
   },
   welcomeText: {
@@ -221,6 +221,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontFamily: "Karla-ExtraBold",
     color: "#495E57",
+    textAlign:'left',
   },
   inputBox: {
     borderColor: "#EDEFEE",
