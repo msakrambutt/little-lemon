@@ -9,9 +9,6 @@ export async function createTable() {
         tx.executeSql(
           "create table if not exists menuitems1 (id integer primary key not null, name text, price text, description text, image text, category text);"
         );
-        // tx.executeSql(
-        //   "delete from menuitems;"
-        // );
       },
       reject,
       resolve

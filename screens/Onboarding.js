@@ -8,6 +8,7 @@ import {
   Platform,
   TextInput,
   Pressable,
+  ScrollView,
 } from "react-native";
 import PagerView from "react-native-pager-view";
 import { validateEmail, validateName } from "../utils";
@@ -53,8 +54,7 @@ const Onboarding = () => {
     <KeyboardAvoidingView
       style={styles.container}
       behavior={Platform.OS === "ios" ? "padding" : "height"}
-      onLayout={onLayoutRootView}
-    >
+      onLayout={onLayoutRootView}>
       <View style={styles.header}>
         <Image
           style={styles.logo}
@@ -63,6 +63,24 @@ const Onboarding = () => {
           accessibilityLabel={"Little Lemon Logo"}
         />
       </View>
+      <View style={styles.heroSection}>
+        <Text style={styles.heroHeader}>Little Lemon</Text>
+        <View style={styles.heroBody}>
+          <View style={styles.heroContent}>
+            <Text style={styles.heroHeader2}>Chicago</Text>
+            <Text style={styles.heroText}>
+              We are a family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
+            </Text>
+          </View>
+          <Image
+            style={styles.heroImage}
+            source={require("../img/restauranfood.png")}
+            accessible={true}
+            accessibilityLabel={"Little Lemon Food"}
+          />
+        </View>
+        </View>
       <Text style={styles.welcomeText}>Let us get to know you</Text>
       <PagerView
         style={styles.viewPager}
@@ -194,7 +212,7 @@ const styles = StyleSheet.create({
   },
   welcomeText: {
     fontSize: 40,
-    paddingVertical: 60,
+    paddingVertical: 30,
     fontFamily: "MarkaziText-Medium",
     color: "#495E57",
     textAlign: "center",
@@ -273,6 +291,35 @@ const styles = StyleSheet.create({
     width: 22,
     height: 22,
     borderRadius: 11,
+  },
+  heroSection: {
+    backgroundColor: "#495e57",
+    padding: 15,
+  },
+  heroHeader: {
+    color: "#f4ce14",
+    fontSize: 54,
+    fontFamily: "MarkaziText-Medium",
+  },heroText: {
+    color: "#fff",
+    fontFamily: "Karla-Medium",
+    fontSize: 14,
+  },
+  heroBody: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  heroContent: {
+    flex: 1,
+  },
+  heroImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 12,
+  },heroHeader2: {
+    color: "#fff",
+    fontSize: 30,
+    fontFamily: "MarkaziText-Medium",
   },
 });
 
