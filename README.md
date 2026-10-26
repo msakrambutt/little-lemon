@@ -5,3 +5,12 @@
 # enumerator or simualor
 ## Project Information
 This repository contains the app source code and project setup instructions.
+## Project Overview
+
+Little Lemon is a restaurant website project.
+
+## What I Am Learning
+
+- Building and improving web pages
+- Writing clean, readable code
+- Understanding project structure
