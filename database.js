@@ -40,18 +40,28 @@ export function saveMenuItems(menuItems) {
   });
 }
 
-export async function filterByQueryAndCategories(query, activeCategories) {
+
+export async function filterByQueryAndCategories(query, activeCategories = []) {
   return new Promise((resolve, reject) => {
-    db.transaction(tx => {
-      tx.executeSql(
-        `select * from menuitems1 where name like ? and category in ('${activeCategories.join(
-          "','"
-        )}')`,
-        [`%${query}%`],
-        (_, { rows }) => {
-          resolve(rows._array);
+    db.transaction(
+      tx => {
+        let sql = "select * from menuitems1 where name like ?";
+        const params = [`%${query}%`];
+
+        if (activeCategories.length > 0) {
+          sql += ` and category in (${activeCategories.map(() => "?").join(", ")})`;
+          params.push(...activeCategories);
         }
-      );
-    }, reject);
+
+        tx.executeSql(
+          sql,
+          params,
+          (_, { rows }) => resolve(rows._array)
+        );
+      },
+      reject
+    );
   });
+}
+
 }
