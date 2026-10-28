@@ -39,7 +39,7 @@ export function saveMenuItems(menuItems) {
     );
   });
 }
-
+// Filters menu items by search query and selected categories.
 
 export async function filterByQueryAndCategories(query, activeCategories = []) {
   return new Promise((resolve, reject) => {
