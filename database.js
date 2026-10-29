@@ -17,13 +17,23 @@ export async function createTable() {
 }
 
 export async function getMenuItems() {
-  return new Promise(resolve => {
-    db.transaction(tx => {
-      tx.executeSql("select * from menuitems1", [], (_, { rows }) => {
-        resolve(rows._array);
-      });
-
-    });
+  return new Promise((resolve, reject) => {
+    db.transaction(
+      tx => {
+        tx.executeSql(
+          "select * from menuitems1",
+          [],
+          (_, { rows }) => {
+            resolve(rows._array);
+          },
+          (_, error) => {
+            reject(error);
+            return false;
+          }
+        );
+      },
+      reject
+    );
   });
 }
 
