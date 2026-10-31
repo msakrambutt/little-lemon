@@ -21,7 +21,7 @@ export async function getMenuItems() {
     db.transaction(
       tx => {
         tx.executeSql(
-          "select * from menuitems1",
+          "SELECT * FROM menuitems1 ORDER BY title ASC",
           [],
           (_, { rows }) => {
             resolve(rows._array);
