@@ -1,16 +1,53 @@
-# Little lemon Food Order App
-# Nodejs LTS recommended installed 
-## To run on terminal type npm install, it will installed all packages
-# Then type npm start chose specific open as per your Mobile device Android or Ios or on virtual
-# enumerator or simualor
-## Project Information
-This repository contains the app source code and project setup instructions.
-## Project Overview
+# Little Lemon Food Order App 🍋
 
-Little Lemon is a restaurant website project.
+Welcome to the Little Lemon Food Order App repository!
 
-## What I Am Learning
+## About the Project
 
-- Building and improving web pages
-- Writing clean, readable code
-- Understanding project structure
+Little Lemon is a food ordering application project focused on building a user-friendly experience for browsing and ordering food.
+
+## Project Setup
+
+### Requirements
+- Node.js LTS
+- npm
+- Android Studio or Xcode (for mobile emulators)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/msakrambutt/little-lemon.git
+   ```
+
+2. Open the project directory:
+   ```bash
+   cd little-lemon
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the application:
+   ```bash
+   npm start
+   ```
+
+5. Follow the terminal instructions to open the application on your preferred platform.
+
+## Learning Goals
+
+- Improve application development skills.
+- Understand project structure and components.
+- Practice writing clean and maintainable code.
+- Learn to build user-friendly interfaces.
+
+## Repository
+
+[Little Lemon on GitHub](https://github.com/msakrambutt/little-lemon)
+
+---
+
+Thank you for visiting the Little Lemon project!
