@@ -36,6 +36,19 @@ Little Lemon is a food ordering application project focused on building a user-f
    ```
 
 5. Follow the terminal instructions to open the application on your preferred platform.
+   ## Project Features
+
+- User-friendly food ordering experience.
+- Organized project structure.
+- Simple and clean application design.
+- Designed with future improvements and new features in mind.
+
+## Future Improvements
+
+- Enhance the user interface.
+- Improve application navigation.
+- Add more food ordering features.
+- Continue improving code quality and documentation.
 
 ## Learning Goals
 
