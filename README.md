@@ -2,6 +2,18 @@
 
 Welcome to the Little Lemon Food Order App repository!
 
+## About the Project:
+
+## Technologies Used
+
+The Little Lemon project uses modern development tools and technologies.
+
+- JavaScript
+- React Native (if used in this project)
+- Node.js
+- npm
+- Git and GitHub for version control
+
 ## About the Project
 
 Little Lemon is a food ordering application project focused on building a user-friendly experience for browsing and ordering food.
