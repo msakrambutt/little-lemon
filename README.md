@@ -6,6 +6,7 @@ Welcome to the Little Lemon Food Order App repository!
 
 ## Technologies Used
 
+
 The Little Lemon project uses modern development tools and technologies.
 
 - JavaScript
@@ -13,6 +14,16 @@ The Little Lemon project uses modern development tools and technologies.
 - Node.js
 - npm
 - Git and GitHub for version control
+- ## Project Structure
+
+The repository is organized to keep the project files easy to manage and maintain.
+
+- **Source Files:** Contains the main application code.
+- **Components:** Organizes reusable interface elements.
+- **Assets:** Stores images, icons, and other project resources.
+- **Documentation:** Provides information about the project and its setup.
+
+The folder structure may vary depending on the current project implementation.
 
 ## About the Project
 
