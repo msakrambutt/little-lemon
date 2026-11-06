@@ -1,4 +1,6 @@
 # Little Lemon Food Order App 🍋
+### Daily Progress
+Updated project documentation and continued working on the Little Lemon project.
 
 Welcome to the Little Lemon Food Order App repository!
 
